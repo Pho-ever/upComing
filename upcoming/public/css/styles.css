@@ -11,20 +11,23 @@
     --transition: 0.5s;
 }
 
-
 .container {
-    background-image: url(../../public/Images/computers.png);
+    background-image: url(../../public/images/NG-en-20220718-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    background-color: rgba(48, 40, 39, 0.562);
+    background-blend-mode: soft-light;
     height: 100vh;
     width: 100vw;
-  }
+    }
+
   
   .navbar {
     color: white;
     background-color: transparent;
     display: flex;
-    z-index: 2;
+    z-index: 10;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -35,10 +38,15 @@
   }
   
   .sign-in{
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 0.3rem 0.7rem;
     border: 2px solid white;
     font-size: 1.2rem;
+  }
+  .logo {
+      width: 4rem;
+      height: 4rem;
+      border: 2px solid white;
   }
 
   .sign-in:hover {
@@ -57,10 +65,12 @@ LANDING PAGE CSS
     flex-direction: column;
     justify-content: center;
     padding: 4rem;
+    z-index: 20;
+    /* border: 2px solid red; */
 }
 
 .landing-info h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: white;
     width: 80%;
     margin: 1rem auto;
@@ -90,10 +100,15 @@ LANDING PAGE CSS
     outline: none;
     padding: 0.5rem;
     color: white;
-    background-color: #1D1A18;
+    background-color: #794411;
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+.Typewriter__wrapper {
+    /* color: #463C31; */
+    color: #794411;
 }
 
 @media (max-width: 991.98px) {
@@ -128,7 +143,6 @@ LANDING PAGE CSS
 }
 
 @media (max-width: 575.98px) {
-
     .landing-info h2{
         font-size: 2rem;
     }
@@ -139,5 +153,10 @@ LANDING PAGE CSS
 
     .landing-info button  {
         width: 9rem;
+    }
+}
+@media (max-width: 375.98px) {
+    .landing-info h2{
+        font-size: 1.5rem;
     }
 }

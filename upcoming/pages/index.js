@@ -1,5 +1,6 @@
 import Navbar from '../components/navbar'
 import Landing from '../components/landing'
+import Swiper from '../components/swiper'
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div className="container">
       <Navbar />
       <Landing />
+      <Swiper />
     </div>
   )
 }
