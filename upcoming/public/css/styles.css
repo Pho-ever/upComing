@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+    --buttonColor: #1D1A18;
+    --fontFamily: "Montserrat", sans-serif;
+    --mainColor: #1D1A18;
+    --mainColor2: #f4f4f4;
+    --optionalColor: #666666;
+    --blackColor: #221638;
+    --fontSize: 16px;
+    --transition: 0.5s;
+}
+
+
 .container {
     background-image: url(../../public/Images/computers.png);
     background-repeat: no-repeat;
@@ -30,27 +44,27 @@
   .sign-in:hover {
     color: black;
     background-color: white;
-  }
+}
 
-  /* LANDING INFO */
+/*================================================
+LANDING PAGE CSS
+=================================================*/
 
 .landing-info { 
-    border: 2px solid red;
     height: 80vh;
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    padding: 5rem;
+    padding: 4rem;
 }
 
 .landing-info h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: white;
-    width: 45%;
+    width: 80%;
     margin: 1rem auto;
     line-height: 1.4;
-    border: 2px solid white
     
 }
 
@@ -60,7 +74,7 @@
 }
 
 .landing-info input {
-    width: 25rem;
+    width: 50%;
     height: 2.5rem;
     border-radius: 10px;
     padding: 0.5rem 1rem;
@@ -80,4 +94,50 @@
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .sign-in{
+        font-size: 1rem;
+    } 
+
+    .landing-info input  {
+        width: 50%;
+    }
+    .landing-info h2{
+        font-size: 2.5rem;
+        width: 65%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .landing-info {
+        padding: 2rem;
+    }
+    .landing-info h2{
+        width: 100%;
+    }
+    .landing-info input  {
+        width: 80%;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .landing-info h2{
+        font-size: 2rem;
+    }
+
+    .landing-info input{
+        width: 80%;
+    }
+
+    .landing-info button  {
+        width: 9rem;
+    }
 }
