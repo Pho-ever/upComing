@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    background-image: url('../images/computers.png');
+    background-image: url('../computers.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(20, 18, 18, 0.562);
@@ -267,7 +267,7 @@ SIGN IN CSS
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
-  }
+    }
 
 @media (max-width: 991.98px) {
     .sign-in-container {

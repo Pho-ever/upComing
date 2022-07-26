@@ -1,4 +1,3 @@
-// import Navbar from '../components/navbar'
 import { useState } from 'react'
 import Link from 'next/link'
 
@@ -20,11 +19,11 @@ const SignIn = () => {
             <div>
                 <form className="sign-in-container">
                     <div className="sign-in-heading">SIGN IN</div>
-                    {/* EMAIL INPUT */}
+
                     <div className="email">
                         <input type='email' placeholder='Email or phone number' />
                     </div>
-                    {/* PASSWORD */}
+
                     <div className="password">
                         <input
                             type={showPassword ? 'text' : 'password'}
