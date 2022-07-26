@@ -45,7 +45,7 @@ const SignIn = () => {
                             <a>Need Help?</a>
                         </Link>
                     </div>
-                    <div class="sign-up">
+                    <div className="sign-up">
                         <p>New to Upcoming? </p>
                         <Link href="#">
                             <a> Sign up now</a>
