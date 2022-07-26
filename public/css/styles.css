@@ -40,35 +40,35 @@ body {
     opacity: 1;
     }
 
-  
-  .navbar {
+
+.navbar {
     color: white;
     background-color: transparent;
-    display: flex;
     z-index: 10;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 5rem;
+    align-items: center;
+    padding: 0 5rem;
     font-size: 1.5rem;
     font-weight: 600;
-  }
-  
-  .sign-in{
+    }
+
+.sign-in{
     border-radius: 5px;
     padding: 0.3rem 0.7rem;
     border: 2px solid white;
     font-size: 1.2rem;
-  }
-  .logo {
-      width: 4rem;
-      height: 4rem;
-      border: 2px solid white;
-  }
+}
 
-  .sign-in:hover {
-    color: black;
-    background-color: white;
+.logo {
+    width: 8rem;
+    height: 8rem;
+    }
+
+.sign-in:hover {
+    color: white;
+    background-color: #B20111;
 }
 
 /*================================================
@@ -116,7 +116,6 @@ LANDING PAGE CSS
     outline: none;
     padding: 0.8rem;
     color: white;
-    /* background-color: #794411; */
     background-color: transparent;
     font-weight: 600;
     font-size: 1rem;
@@ -124,8 +123,9 @@ LANDING PAGE CSS
 }
 
 .Typewriter__wrapper {
-    /* color: #794411; */
-    color: #ca3f03;
+    /* color: #ca3f03; */
+    color: #B20111;
+
 }
 
 @media (max-width: 991.98px) {

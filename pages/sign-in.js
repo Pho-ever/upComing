@@ -13,7 +13,7 @@ const SignIn = () => {
         <div className="container">
             <div className="navbar">
                 <div className="logo">
-                    {/* <img src="logo.png" alt="logo" /> */}
+                    <img className="logo" src="upcoming.png" alt="logo" />
                 </div>
             </div>
             <div>
