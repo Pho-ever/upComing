@@ -12,7 +12,7 @@
 }
 
 .container {
-    background-image: url(../../public/images/NG-netflix.jpg);
+    background-image: url(../images/NG-netflix.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
