@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    background-color: rgba(48, 40, 39, 0.562);
+    background-color: rgba(20, 18, 18, 0.562);
     background-blend-mode: soft-light;
     height: 100vh;
     width: 100vw;
@@ -98,17 +98,18 @@ LANDING PAGE CSS
     border-radius: 5px;
     border: 1px solid white;
     outline: none;
-    padding: 0.5rem;
+    padding: 0.8rem;
     color: white;
-    background-color: #794411;
+    /* background-color: #794411; */
+    background-color: transparent;
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
 }
 
 .Typewriter__wrapper {
-    /* color: #463C31; */
-    color: #794411;
+    /* color: #794411; */
+    color: red;
 }
 
 @media (max-width: 991.98px) {
