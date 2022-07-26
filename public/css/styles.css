@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    background-image: url('../computers.png');
+    background-image: url(../computers.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(20, 18, 18, 0.562);
