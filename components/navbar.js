@@ -7,7 +7,7 @@ const Navbar = () => {
                 {/* <img src="logo.png" alt="logo" /> */}
             </div>
             <div>
-                <Link href="#">
+                <Link href="/sign-in">
                     <a className="sign-in">Sign In</a>
                 </Link>
             </div>

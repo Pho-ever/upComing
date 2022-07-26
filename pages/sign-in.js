@@ -1,5 +1,6 @@
-import Navbar from '../components/navbar'
+// import Navbar from '../components/navbar'
 import { useState } from 'react'
+import Link from 'next/link'
 
 
 const SignIn = () => {
@@ -11,7 +12,11 @@ const SignIn = () => {
 
     return (
         <div className="container">
-            <Navbar />
+            <div className="navbar">
+                <div className="logo">
+                    {/* <img src="logo.png" alt="logo" /> */}
+                </div>
+            </div>
             <div>
                 <form className="sign-in-container">
                     <div className="sign-in-heading">SIGN IN</div>
@@ -30,7 +35,23 @@ const SignIn = () => {
                             onClick={handlePasswordVisibility}
                         ></div>
                     </div>
-                    <button>LOGIN</button>
+                    <button>Sign In</button>
+                    <div className="sign-in-help">
+                        <div>
+                            <input type="checkbox" name="" />
+                            <label>Remember me</label>
+                        </div>
+                        <Link href="#">
+                            <a>Need Help?</a>
+                        </Link>
+                    </div>
+                    <div class="sign-up">
+                        <p>New to Upcoming? </p>
+                        <Link href="#">
+                            <a> Sign up now</a>
+                        </Link>
+                    </div>
+
                 </form>
             </div>
         </div>

@@ -11,13 +11,26 @@
     --transition: 0.5s;
 }
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+    margin: 0;
+}
+
 body {
     overflow-x: hidden;
     max-width: 100%;
 }
 
 .container {
-    background-image: url(../images/computers.png);
+    background-image: url('../images/computers.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(20, 18, 18, 0.562);
@@ -112,7 +125,7 @@ LANDING PAGE CSS
 
 .Typewriter__wrapper {
     /* color: #794411; */
-    color: red;
+    color: #ca3f03;
 }
 
 @media (max-width: 991.98px) {
@@ -165,11 +178,10 @@ LANDING PAGE CSS
     }
 }
 
+
 /*================================================
 SIGN IN CSS
 =================================================*/
-
-
 .sign-in-container {
     width: 30%;
     height: auto;
@@ -190,11 +202,12 @@ SIGN IN CSS
     justify-content:center;
 }
 
-input {
+.password input,
+.email input {
     width: 100%;
     padding: 0.8rem;
     font-size: 1rem;
-    margin: 0 0 1rem;
+    margin: 0 0 2rem;
     border-radius: 5px;
     border: 0;
     outline: none;
@@ -205,11 +218,79 @@ input {
 .sign-in-container button {
     width: 100%;
     background-color: #ca3f03;
-    margin: 0 auto;
+    margin: 1rem auto 0.7rem;
     border-radius: 5px;
     border: 0;
     padding: 0.8rem;
     color: white;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.sign-in-help {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 0.8rem;
+}
+
+.sign-up {
+    display: flex;
+    color: white;
+}
+
+.sign-up p {
+    color: #c59f8fbd;
+}
+
+.show-password {
+    content: '';
+    position: relative;
+    left: 90%;
+    bottom: 4rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-image: url('../images/visibility_eye.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.hide-password {
+    content: '';
+    position: relative;
+    left: 90%;
+    bottom: 4rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-image: url('../images/feather-eye-off.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+@media (max-width: 991.98px) {
+    .sign-in-container {
+        width: 45%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .sign-in-container {
+        width: 55%;
+    }
+    
+}
+
+@media (max-width: 575.98px) {
+    .sign-in-container {
+        width: 70%;
+    }
+    .sign-in-help,
+    .sign-up {
+        font-size:0.85rem;
+    }
+    .sign-in-heading {
+        font-size: 1.2rem;
+    }
 }
