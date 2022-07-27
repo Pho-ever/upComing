@@ -154,6 +154,7 @@ LANDING PAGE CSS
     }
     .landing-info h2{
         width: 100%;
+        font-size: 2rem;
     }
     .landing-info input  {
         width: 80%;
@@ -169,7 +170,7 @@ LANDING PAGE CSS
 
 @media (max-width: 575.98px) {
     .landing-info h2{
-        font-size: 2.4rem;
+        font-size: 2.4rem !important;
     }
 
     .landing-info input{
