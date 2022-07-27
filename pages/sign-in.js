@@ -16,7 +16,7 @@ const SignIn = () => {
                     <img className="logo" src="upcoming.png" alt="logo" />
                 </div>
             </div>
-            <div>
+            <div className="sign-in-body">
                 <form className="sign-in-container">
                     <div className="sign-in-heading">SIGN IN</div>
 
