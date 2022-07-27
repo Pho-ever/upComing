@@ -201,7 +201,7 @@ SIGN IN CSS
     flex-direction: column;
     padding: 2rem;
     border-radius: 10px;
-    background-color: rgba(116, 59, 21, 0.507);
+    background-color: #837e7e98;
 }
 
 .sign-in-heading{
@@ -226,9 +226,13 @@ SIGN IN CSS
     color: black;
 }
 
+.password input {
+    padding-right: 1.9rem;
+}
+
 .sign-in-container button {
     width: 100%;
-    background-color: #ca3f03;
+    background-color: #B20111;
     margin: 1rem auto 0.7rem;
     border-radius: 5px;
     border: 0;
@@ -299,9 +303,25 @@ SIGN IN CSS
     }
     .sign-in-help,
     .sign-up {
-        font-size:0.85rem;
+        font-size:0.75rem;
     }
     .sign-in-heading {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    .sign-in-container button{
+        font-size: 1rem
+    }
+
+    .hide-password,
+    .show-password {
+        width:0.9rem;
+        height:0.9rem;
+        bottom: 3.8rem;
+    }
+
+    .password input, 
+    .email input {
+        font-size: 0.9rem;
     }
 }
