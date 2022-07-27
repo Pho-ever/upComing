@@ -261,7 +261,7 @@ SIGN IN CSS
     bottom: 4rem;
     width: 1.3rem;
     height: 1.3rem;
-    background-image: url('../images/visibility_eye.svg');
+    background-image: url('/images/visibility_eye.svg');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
@@ -274,7 +274,7 @@ SIGN IN CSS
     bottom: 4rem;
     width: 1.3rem;
     height: 1.3rem;
-    background-image: url('../images/feather-eye-off.svg');
+    background-image: url('/images/feather-eye-off.svg');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
