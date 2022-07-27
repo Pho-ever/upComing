@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
+
 :root {
     --buttonColor: #1D1A18;
     --fontFamily: "Montserrat", sans-serif;
@@ -30,7 +31,7 @@ body {
 }
 
 .container {
-    background-image: url(../computers.png);
+    background-image: url('/computers.png');
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
