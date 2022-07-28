@@ -1,4 +1,4 @@
-import Navbar from '../components/navbar'
+import Navbar from '../components/_App/navbar'
 import Landing from '../components/landing'
 import Swiper from '../components/swiper'
 // import Swiper from ''
@@ -7,7 +7,6 @@ import Swiper from '../components/swiper'
 export default function Home() {
   return (
     <div className="container">
-      {/* <img src="../public/images/NG-netflix.jpg" /> */}
       <Navbar />
       <Landing />
       <Swiper />
