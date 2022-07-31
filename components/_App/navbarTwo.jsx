@@ -1,13 +1,12 @@
 import Link from 'next/link'
-// import { useState } from "react"
+import { useState } from "react"
 
 
-// const HandleDropdown = () => {
-//     setYearDropdown = (!yearDropdown)
-// }
 
-// const [yearDropdown, setYearDropdown] = useState(false)
 const NavbarTwo = () => {
+
+    const [isDropdown, setIsDropdown] = useState(false);
+
     return (
         <>
             <div className="navbar-two">
@@ -20,18 +19,10 @@ const NavbarTwo = () => {
                             </Link>
                         </li>
                         <li>
-                            Year
-                            <div className="navbar-two-years">
-                                <Link href="#">
-                                    <a>2022</a>
-                                </Link>
-                                <Link href="#">
-                                    <a>2023</a>
-                                </Link>
-                                <Link href="#">
-                                    <a>2024</a>
-                                </Link>
-                            </div>
+                            <p onClick={() => setIsDropdown(!isDropdown)}
+                            onMouseEnter={() => setIsDropdown(true)}
+                            onMouseLeave={() => setIsDropdown(false)}
+                            >Year</p>
                         </li>
                     </ul>
                 </div>
@@ -55,6 +46,23 @@ const NavbarTwo = () => {
                     </ul>
                 </div>
             </div>
+            { isDropdown && <div className="navbar-two-years"  
+            onMouseEnter={() => setIsDropdown(true)}
+            onMouseLeave={() => setIsDropdown(false)}
+            >
+                <div className="navbar-years-list">
+                <Link href="#">
+                                <a>2022</a>
+                            </Link>
+                            <Link href="#">
+                                <a>2023</a>
+                            </Link>
+                            <Link href="#">
+                                <a>2024</a>
+                            </Link>
+                </div>
+                    
+                        </div>}
         </>
     );
 }

@@ -98,7 +98,6 @@ NAVBAR-TWO CSS
 
 .navbar-two ul {
     display: flex;
-    /* margin: 2rem 0 0; */
     padding: 0;
 }
 
@@ -109,12 +108,23 @@ NAVBAR-TWO CSS
 }
 
 .navbar-two-years {
-    border: 2px solid blue;
+    border: 2px solid transparent;
     position: absolute;
     display: flex;
+    left: 9rem;
     flex-direction: column;
-    padding: 0.5rem 1rem;
-    margin-top: 1.8rem;
+    padding: 1.6rem 1rem 0;
+    margin-top: -2rem;
+}
+
+.navbar-years-list {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+}
+
+.navbar-years-list a {
+    padding: 0.3rem 0;
 }
 
 
