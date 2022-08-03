@@ -395,7 +395,8 @@ SIGN IN CSS
 /*================================================
 FAV-ACTOR CSS
 =================================================*/
-.favactor-container {
+.fav-actor-container,
+.fav-cartoon-container-2 {
     display: grid;
     grid-template-columns: 6fr 6fr;
     background-color: black;
@@ -411,7 +412,15 @@ FAV-ACTOR CSS
 }
 
 @media (max-width: 767.98px) {
-    .favactor-container {
+    .fav-actor-container {
         grid-template-columns: 12fr;
+    }
+
+    .fav-cartoon-container-2 {
+        grid-template-columns:12fr;
+        /* order: -1; */
+    }
+    .details-2 {
+        order: -1;
     }
 }

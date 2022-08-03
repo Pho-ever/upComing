@@ -8,7 +8,7 @@ const Landing = () => {
                     <Typewriter
                         wrapperClassName="Typewriter__wrapper"
                         options={{
-                            strings: ['Actions', 'Anime', 'Romance', 'Sci-fi'],
+                            strings: ['Genre', 'Actions', 'Anime', 'Romance', 'Sci-fi'],
                             autoStart: true,
                             loop: true,
                             delay: 40,

@@ -1,7 +1,6 @@
 import Navbar from '../components/_App/navbar'
 import Landing from '../components/Landing/landing'
-import FavActor from '../components/Landing/favActor'
-// import Swiper from ''
+import LandingTwo from '../components/Landing/landingTwo'
 
 
 export default function Home() {
@@ -11,7 +10,7 @@ export default function Home() {
         <Navbar />
         <Landing />
       </div>
-      <FavActor />
+      <LandingTwo />
 
     </>
   )
