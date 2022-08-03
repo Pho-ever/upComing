@@ -397,9 +397,21 @@ FAV-ACTOR CSS
 =================================================*/
 .favactor-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 6fr 6fr;
     background-color: black;
     grid-gap: 40px;
     color: white;
     padding: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.favactor-img {
+    width: 80%;
+}
+
+@media (max-width: 767.98px) {
+    .favactor-container {
+        grid-template-columns: 12fr;
+    }
 }
