@@ -409,18 +409,53 @@ FAV-ACTOR CSS
 
 .favactor-img {
     width: 80%;
+    border: 2px solid white;
 }
 
 @media (max-width: 767.98px) {
-    .fav-actor-container {
+    .fav-actor-container,
+    .fav-cartoon-container-2 {
         grid-template-columns: 12fr;
     }
 
-    .fav-cartoon-container-2 {
-        grid-template-columns:12fr;
-        /* order: -1; */
-    }
     .details-2 {
         order: -1;
     }
+}
+
+
+
+/*================================================
+FAQ CSS
+=================================================*/
+.faq-container{
+    border: 2px sold white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.faq-container h1 {
+    margin-bottom: 0.7em;
+    margin-top: 2em;
+    font-size: 3rem;
+}
+
+.faq-container button {
+    width: 70%;
+    margin-bottom: 10px;
+    font-size: 1.9rem;
+    padding: 1.5rem;
+    color:#1a0f10b6;
+    font-weight: 600;
+    text-align: left;
+    border-radius:40px;
+    cursor: pointer;
+}
+
+.faq-dropdown {
+    border: 1px solid red;
+    width: 60%;
 }
