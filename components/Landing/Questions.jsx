@@ -1,17 +1,18 @@
-// import {useState} from 'react'
+import {useState} from 'react'
 
 const Questions = () => {
-    // const [dropdown, setIsDropdown] = useState(false)
+    const [dropdownIndex, setIsDropdownIndex] = useState(-1)
 
-    // const handleDropdown = (index) => {
-    //     setIsDropdown(!dropdown)
-    // }
+    const handleDropdown = (index) => {
+        const activeIndex = dropdownIndex === index ? -1 : index
+        setIsDropdownIndex(activeIndex)
+    }
 
     const FAQ = [
-        {heading: 'What is Upcoming', content: ""},
-        {heading: 'How much does UpComing cost?', content:""},
-        {heading: 'Can I stream on Upcoming?', content:""},
-        {heading: 'Can I get notifications?', content:""}
+        {heading: 'What is Upcoming', content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis quae laborum quas, impedit corrupti excepturi voluptates accusantium quam culpa natus voluptatibus iusto quia perferendis eum, odit vel labore qui est quo ipsam! Unde non explicabo, debitis veniam tenetur natus."},
+        {heading: 'How much does UpComing cost?', content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis quae laborum quas, impedit corrupti excepturi voluptates accusantium quam culpa natus voluptatibus iusto quia perferendis eum, odit vel labore qui est quo ipsam! Unde non explicabo, debitis veniam tenetur natus."},
+        {heading: 'Can I stream on Upcoming?', content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis quae laborum quas, impedit corrupti excepturi voluptates accusantium quam culpa natus voluptatibus iusto quia perferendis eum, odit vel labore qui est quo ipsam! Unde non explicabo, debitis veniam tenetur natus."},
+        {heading: 'Can I get notifications?', content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis quae laborum quas, impedit corrupti excepturi voluptates accusantium quam culpa natus voluptatibus iusto quia perferendis eum, odit vel labore qui est quo ipsam! Unde non explicabo, debitis veniam tenetur natus."}
     ]
         
     
@@ -20,31 +21,24 @@ const Questions = () => {
         <>
             <div className="faq-container">
                 <h1>Frequently Asked Questions</h1>
-                    {FAQ.map(item => (<button>
-                        {item.heading}
-                    </button>))}
+                    {FAQ.map((item, index) => { 
+                        return (
+                            < >
+
+                        <button onClick={() => handleDropdown(index)}>
+                            {item.heading}
+                        </button>
+
+                        {dropdownIndex === index  && 
+                        <div className="faq-dropdown">
+                            {item.content}
+                            </div>}
                     
-                
-                {/* <button onClick={handleDropdown}>What is Upcoming? </button>
-                {dropdown && <div className="faq-dropdown">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis quae laborum quas, impedit corrupti excepturi voluptates accusantium quam culpa natus voluptatibus iusto quia perferendis eum, odit vel labore qui est quo ipsam! Unde non explicabo, debitis veniam tenetur natus.
-                    </div>}
-
-                <button onClick={handleDropdown}>How much does Upcoming cost?</button>
-                {dropdown && <div className="faq-dropdown">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis quae laborum quas, impedit corrupti excepturi voluptates accusantium quam culpa natus voluptatibus iusto quia perferendis eum, odit vel labore qui est quo ipsam! Unde non explicabo, debitis veniam tenetur natus.
-                    </div>}
-
-                <button onClick={handleDropdown}>Can I stream on Upcoming? </button>
-                {dropdown && <div className="faq-dropdown">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis quae laborum quas, impedit corrupti excepturi voluptates accusantium quam culpa natus voluptatibus iusto quia perferendis eum, odit vel labore qui est quo ipsam! Unde non explicabo, debitis veniam tenetur natus.
-                    </div>}
-
-                <button onClick={handleDropdown}>Can I get notifications? </button>
-                {dropdown && <div className="faq-dropdown">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis quae laborum quas, impedit corrupti excepturi voluptates accusantium quam culpa natus voluptatibus iusto quia perferendis eum, odit vel labore qui est quo ipsam! Unde non explicabo, debitis veniam tenetur natus.
-                    </div>} */}
+                        </>
+                        )
+                    })}
             </div>
+            
         </>
     );
 }
